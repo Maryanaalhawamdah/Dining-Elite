@@ -65,8 +65,20 @@
                         </li>
                     @endforeach
                 </ul>
-                {{-- <li class="nav-item"><a class="nav-link scrollto" href="/about"><i class="fas fa-search"></i> --}}
-                </a></li>
+                {{-- <li class="nav-item"><a class="nav-link scrollto" href="/about"><i class="fas fa-search"></i>
+                </a></li> --}}
+                <li>
+                    <div class="row">
+                        <div class="col-md-6">
+                         <input type="text" name="full_text_search" id="full_text_search" class="form-search form-control" placeholder="Search" value="">
+                        </div>
+                        <div class="col-md-2">
+                         @csrf
+                         <a href="{{  '/full-text-search'}}">
+                         <button type="button" name="search" id="search" class="btn-search animated fadeInUp scrollto">Search</button></a>
+                        </div>
+                       </div>
+                </li>
 
             </nav>
 
@@ -105,6 +117,7 @@
             </div>
 
         </div>
+       
     </header>
 
     @yield('contentnav')

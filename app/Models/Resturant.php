@@ -10,7 +10,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 class Resturant extends Model
 {
     use HasFactory;
-    protected $table = 'resturants';
+    protected $table = 'restaurants';
     protected $fillable = ['name','description','image','id','location'];
 
     public function category()

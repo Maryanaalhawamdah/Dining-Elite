@@ -149,12 +149,12 @@ img{
     <body>
         <div class="container1">
           <div class="left-side">
-            <img src="{{ $resturants->image}}">
+            <img src="{{ $restaurants->image}}">
           </div>
           <div class="right-side">
-            <p id="perfume">{{$resturants->location}}</p>
-            <h1 id="header">{{$resturants->name}}</h1>
-            <p id="description"> {{$resturants->description}}</p>
+            <p id="perfume">{{$restaurants->location}}</p>
+            <h1 id="header">{{$restaurants->name}}</h1>
+            <p id="description"> {{$restaurants->description}}</p>
             <div class="price">
 
             </div>

@@ -9,6 +9,7 @@ use App\Http\Controllers\AdminUserController;
 use App\Http\Controllers\AdminResturantController;
 use App\Http\Controllers\AdminReservationController;
 use App\Http\Controllers\profileController;
+use App\Http\Controllers\FullTextSearchController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -94,3 +95,6 @@ Route::resource('user', profileController::class);
 Route::post('edit', [profileController::class,'edit'])->name('edit');
 
 Route::get('/categories', [ResturantController::class,'index']);
+
+Route::get('full-text-search', [FullTextSearchController::class, 'index']);
+ Route::post('search', [FullTextSearchController::class, 'search']);
