@@ -10,6 +10,7 @@
     <meta content="" name="keywords">
     <!-- Favicons -->
     <link href="/public/images/logo.png" rel="icon">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -68,16 +69,11 @@
                 {{-- <li class="nav-item"><a class="nav-link scrollto" href="/about"><i class="fas fa-search"></i>
                 </a></li> --}}
                 <li>
-                    <div class="row">
-                        <div class="col-md-6">
-                         <input type="text" name="full_text_search" id="full_text_search" class="form-search form-control" placeholder="Search" value="">
-                        </div>
-                        <div class="col-md-2">
-                         @csrf
-                         <a href="{{  '/full-text-search'}}">
-                         <button type="button" name="search" id="search" class="btn-search animated fadeInUp scrollto">Search</button></a>
-                        </div>
-                       </div>
+                    html
+<form class="form-inline my-2 my-lg-0">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+</form>
                 </li>
 
             </nav>

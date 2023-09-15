@@ -26,7 +26,7 @@
   <main id="main">
 
     <!-- ======= About Section ======= -->
-    <section id="about" class="about">
+    {{-- <section id="about" class="about">
       <div class="container" data-aos="fade-up">
 
         <div class="row">
@@ -45,7 +45,7 @@
         </div>
 
       </div>
-    </section><!-- End About Section -->
+    </section><!-- End About Section --> --}}
 
     <!-- ======= Why Us Section ======= -->
     <section id="why-us" class="why-us">
@@ -185,7 +185,7 @@
 
 
     <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
+    {{-- <section id="contact" class="contact">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -262,8 +262,8 @@
 
         </div>
 
-      </div>
-    </section><!-- End Contact Section -->
+      </div> --}}
+    {{-- </section><!-- End Contact Section --> --}}
 
   </main><!-- End #main -->
 {{--

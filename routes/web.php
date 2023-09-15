@@ -41,7 +41,7 @@ Route::get('/about', function () {
     return view('home.about');
 });
 Route::get('/contact', function () {
-    return view('home.about');
+    return view('home.contact');
 });
 
 
