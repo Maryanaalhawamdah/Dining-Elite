@@ -10,7 +10,7 @@
 <div class="container card shadow mb-4">
     <div class="row card-header">
         <div class="col"><h6 class="m-0 font-weight-bold text-primary">Admins</h6></div>
-        <div class="col-2 .col-sm-6"><a href="{{ route('Admin.create') }}" class="btn btn-primary btn-icon-split">
+        <div class="col-2 .col-sm-6"><a href="{{ route('Admin.create') }}" class="btn btn-primary btn-icon-split" style="width: 90%">
             <span class="icon text-white-50">
                 <i class="fas fa-flag"></i>
             </span>
@@ -41,7 +41,7 @@
                         {{-- <td>{{ $item->created_at }}</td>
                         <td>{{ $item->updated_at }}</td> --}}
                         <td>
-                            <a href="{{route('Admin.edit', $item->id )}}" class="btn btn-warning btn-icon-split" style="width: 101%">
+                            <a href="{{route('Admin.edit', $item->id )}}" class="btn btn-warning btn-icon-split" style="width: 50%">
                                 <span class="icon text-white-50">
                                     <i class="fas fa-exclamation-triangle"></i>
                                 </span>
