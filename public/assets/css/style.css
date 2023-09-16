@@ -21,15 +21,19 @@ h1, h2, h3, h4, h5, h6 {
 .btn-search{
   color: white;
   background-color: black;
-  padding-left: 40%!important;
-  padding-right: 40%!important;
+  padding-left: 5%!important;
+  padding-right: 5%!important;
   border:2px solid #cda45e;
   border-radius: 50px;
-  margin-left: 20% !important;
+  margin-left: 5% !important;
 }
 .form-search{
   padding: 3%;
-  margin-left: 20%!important;
+  margin-left: 5%!important;
+  display: flex!important;
+}
+.form-group{
+  display: flex!important;
 }
 
 /*--------------------------------------------------------------
@@ -1691,4 +1695,8 @@ section {
   text-align: center;
   font-size: 13px;
   color: #fff;
+}
+.about{
+  /* color:#cda45e ; */
+  /* font-weight: bold; */
 }

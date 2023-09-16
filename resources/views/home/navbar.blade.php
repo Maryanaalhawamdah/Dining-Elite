@@ -69,11 +69,25 @@
                 {{-- <li class="nav-item"><a class="nav-link scrollto" href="/about"><i class="fas fa-search"></i>
                 </a></li> --}}
                 <li>
-                    html
-<form class="form-inline my-2 my-lg-0">
-    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-</form>
+                   
+                    {{-- <form action="{{ route('search') }}" method="GET" class="form-search">
+                        <div class="form-group">
+                            <input type="text" name="q" class="form-control" placeholder="Search for restaurants">
+                            <button type="submit" class="btn-search btn-dark">Search</button>
+                        </div>
+                       
+                    </form> --}}
+                    <form action="{{ route('home.search') }}" method="POST" class="form-search">
+                       @csrf
+                       @method('post')
+                        <div class="form-group">
+                            <input type="text" name="q" class="form-control" placeholder="Search for restaurants">
+                        </div>
+                        <button type="submit" class="btn-search btn-primary">Search</button>
+                    </form>
+                    
+
+                    
                 </li>
 
             </nav>

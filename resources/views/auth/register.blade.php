@@ -11,7 +11,7 @@
 
 
 
-{{-- tharaa --}}
+
 <section class="vh-10 gradient-custom" >
     <div class="container"style="margin-top:1% ;" >
 @section('content')

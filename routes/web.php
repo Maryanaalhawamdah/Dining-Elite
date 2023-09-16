@@ -1,4 +1,5 @@
 <?php
+use App\Http\Controllers;
 use App\Http\Controllers\ReservationController;
 use App\Http\Controllers\ResturantController;
 use App\Http\Controllers\CategoryController;
@@ -95,6 +96,6 @@ Route::resource('user', profileController::class);
 Route::post('edit', [profileController::class,'edit'])->name('edit');
 
 Route::get('/categories', [ResturantController::class,'index']);
+Route::post('/home/search', [ResturantController::class,'search'])->name('home.search');
 
-Route::get('full-text-search', [FullTextSearchController::class, 'index']);
- Route::post('search', [FullTextSearchController::class, 'search']);
+// Route::post('/home/search', 'ResturantController@search')->name('home.search');

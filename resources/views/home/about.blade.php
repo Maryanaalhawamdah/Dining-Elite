@@ -19,8 +19,8 @@
               <img src="/images/aqab.jpg" alt="">
             </div>
           </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
-            <h3>About Us</h3><br>
+          <div class="about col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+            <h2>About Us</h2><br>
             <p class="italic">
 
                 Welcome to The Dinning Elite, your gateway to a world of culinary adventures and unforgettable dining experiences. We are passionate about connecting food enthusiasts like you with the finest restaurants in Aqba. At Dinning Elite, we believe that every meal should be a journey, and we're here to make that journey as seamless and enjoyable as possible.

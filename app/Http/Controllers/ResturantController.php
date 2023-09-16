@@ -8,6 +8,7 @@ use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\View\View;
+use App\Http\Controllers;
 
 class ResturantController extends Controller
 {
@@ -37,5 +38,17 @@ class ResturantController extends Controller
 
 
         }
+        public function search(Request $request)
+        {
+            $query = $request->input('q');
+
+            $restaurants = Resturant::where('name', 'LIKE', '%' . $query . '%')
+            ->orWhere('description', 'LIKE', '%' . $query . '%')
+            ->orWhere('location', 'LIKE', '%' . $query . '%')
+            ->get();
+
+            return view('home.search', compact('restaurants', 'query'));
+         }
+
 
 }

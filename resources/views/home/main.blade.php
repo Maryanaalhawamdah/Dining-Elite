@@ -13,8 +13,8 @@
           <h2> where booking has never been easier.</h2>
 
           <div class="btns">
-            <a href="/resturants" class="btn-book animated fadeInUp scrollto">Discover Now</a>
-            <a a href="{{ Auth::check() ? '/book' : '/register' }}"  class="btn-book animated fadeInUp scrollto">Book a Table</a>
+            <a href="/resturants" class="btn-book animated fadeInUp scrollto">Book Now</a>
+            {{-- <a a href="{{ Auth::check() ? '/book' : '/register' }}"  class="btn-book animated fadeInUp scrollto">Book a Table</a> --}}
           </div>
         </div>
 
