@@ -40,7 +40,7 @@
                         <td>{{ $item->name }}</td>
                         <td>{{ $item->description }}</td>
                         <td>
-                            <img src="{{ asset('storage/' . $item->image) }}" alt="{{ $item->image }} Image">
+                            <img src="{{ asset('storage/' . $item->image) }}" alt="{{ $item->image }} Image" style="width: 60%">
                         </td>
                         <td>{{ $item->location }}</td>
                         <td>{{ $item->number_of_tables }}</td>
@@ -48,20 +48,20 @@
                         <td>{{ $item->created_at }}</td>
                         <td>{{ $item->updated_at }}</td>
                         <td>
-                            <a href="{{route('Restaurant.edit', $item->id )}}" class="btn btn-warning btn-icon-split">
+                            <a href="{{route('Restaurant.edit', $item->id )}}" class="btn btn-warning btn-icon-split" style="width: 101%">
                                 <span class="icon text-white-50">
-                                    <i class="fas fa-exclamation-triangle"></i>
+                                    <i class="fas fa-exclamation-triangle" ></i>
                                 </span>
-                                <span class="text">Edit</span>
+                                <span class="text" >Edit</span>
                             </a>
                             <form action="{{route('Restaurant.destroy' , $item->id)}}" method="post">
                                 @csrf
                                 @method('Delete')
-                            <button onclick="return confirm("Confirm delete?") class="btn btn-danger btn-icon-split">
+                            <button onclick="return confirm("Confirm delete?") class="btn btn-danger btn-icon-split modal-sm" style="margin-top:4%">
                                 <span class="icon text-white-50">
                                     <i class="fas fa-trash"></i>
                                 </span>
-                                <span class="text">Delete</span>
+                                <span class="text" >Delete</span>
                             </button>
                             </form>
                         </td>

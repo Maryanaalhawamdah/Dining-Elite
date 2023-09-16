@@ -46,7 +46,7 @@
                         <td>{{ $item->created_at }}</td>
                         <td>{{ $item->updated_at }}</td>
                         <td>
-                            <a href="{{route('Reservation.edit', $item->id )}}" class="btn btn-warning btn-icon-split">
+                            <a href="{{route('Reservation.edit', $item->id )}}" class="btn btn-warning btn-icon-split" style="width: 101%">
                                 <span class="icon text-white-50">
                                     <i class="fas fa-exclamation-triangle"></i>
                                 </span>
@@ -55,7 +55,7 @@
                             <form action="{{route('Reservation.destroy' , $item->id)}}" method="post">
                                 @csrf
                                 @method('Delete')
-                            <button href="admin/sidebar/reservation" onclick="return confirm("Confirm delete?") class="btn btn-danger btn-icon-split">
+                            <button href="admin/sidebar/reservation" onclick="return confirm("Confirm delete?") class="btn btn-danger btn-icon-split" style="margin-top:4%">
                                 <span class="icon text-white-50">
                                     <i class="fas fa-trash"></i>
                                 </span>
