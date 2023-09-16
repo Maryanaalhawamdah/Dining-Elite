@@ -12,7 +12,7 @@ class AdminResturant extends Model
     use softDeletes;
     protected $softDelete = true;
 
-    protected $table = 'resturants';
+    protected $table = 'restaurants';
     protected $primaryKey = 'id';
     protected $fillable = ['name', 'description', 'image', 'location', 'number_of_tables'];
 }
