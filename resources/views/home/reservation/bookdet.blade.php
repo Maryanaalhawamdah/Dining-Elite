@@ -182,7 +182,7 @@ p{
     }
 }
 </style>
-    <body>@section('content')
+    <body style="margin-top:12%">@section('content')
 
         <div class="container1">
             <div class="right-side">
@@ -203,3 +203,4 @@ p{
 
         </div>
         @endsection
+        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

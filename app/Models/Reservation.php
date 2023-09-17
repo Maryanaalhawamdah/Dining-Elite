@@ -12,4 +12,9 @@ class Reservation extends Model
     protected $table = 'reservations';
     protected $primaryKey = 'id';
     protected $fillable = ['name', 'email', 'phone','message','restaurant','guest_number','res_date'];
+
+    public function user()
+{
+    return $this->belongsTo(User::class);
+}
 }
